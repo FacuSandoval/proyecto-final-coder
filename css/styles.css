@@ -1,0 +1,758 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0; }
+
+:root {
+  --boton-padding: 20px 40px; }
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 40px 0;
+  max-width: 1200px; }
+
+.subtitle {
+  color: black;
+  font-size: 2.5rem;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  text-align: center; }
+
+.principal {
+  height: 100vh;
+  background-image: url(../images/traveller-principal.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  position: relative; }
+
+.principal .container {
+  padding: 0; }
+
+.logo {
+  display: flex;
+  margin-right: 40px;
+  justify-content: flex-start; }
+
+.containerIndex {
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px 0;
+  max-width: 1200px; }
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  align-items: center;
+  font-weight: 700; }
+
+.nav--footer {
+  font-weight: 300;
+  justify-content: flex-start; }
+
+.nav__items {
+  color: #fff;
+  text-decoration: none;
+  font-weight: inherit; }
+
+.nav__items:hover {
+  color: #f3aa0b; }
+
+.nav__items--active {
+  color: #f3aa0b;
+  text-decoration: none;
+  border: solid 2px #f3aa0b;
+  border-radius: 30px;
+  padding: 10px; }
+
+.nav__items--active:hover {
+  color: #f3aa0b; }
+
+.nav__items--footer {
+  padding: 10px; }
+
+.principal__container {
+  display: flex;
+  height: calc(100vh - 70px);
+  align-items: center;
+  color: #fff; }
+
+.principal__texts {
+  width: 80%;
+  margin-bottom: 50px; }
+
+.principal__title {
+  font-size: 3.2rem; }
+
+.principal__subtitle {
+  font-size: 2rem;
+  font-weight: 300;
+  margin: 15px 0; }
+
+/*ABOUT*/
+.about {
+  min-height: 400px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 80px;
+  justify-items: center;
+  align-items: center; }
+
+.about__img {
+  text-align: center; }
+
+.about__img--left {
+  text-align: left; }
+
+.about__picture {
+  max-width: 80%;
+  border-radius: 10%; }
+
+.about__paragraph {
+  margin-bottom: 20px;
+  line-height: 1.5;
+  font-weight: 300; }
+
+.aboutIndex {
+  min-height: 400px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 80px;
+  justify-items: center;
+  align-items: center; }
+
+/*DESTINATIONS*/
+.destinations {
+  background: #f2f2f2; }
+
+.destinations__grid {
+  display: grid;
+  grid-template-areas: "img1 img2 img3" "img1 img2 img3";
+  gap: 10px; }
+
+.destinations__item {
+  position: relative;
+  width: 100%;
+  height: 100%; }
+
+.destinations__subtitle {
+  font-weight: 700;
+  font-size: 3rem;
+  color: #f2f2f2;
+  text-decoration: none; }
+
+.destinations__img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer; }
+
+.destinations__hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.destinations__icon {
+  margin-top: 10px;
+  font-size: 30px; }
+
+/*OPINIONES*/
+.testimony__flex {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  margin-top: 50px; }
+
+.testimony__items {
+  width: 80%;
+  margin: 0 auto;
+  background: #c27cbead;
+  box-shadow: 0 8px 10px rgba(66, 66, 66, 0.5);
+  border-radius: 7px;
+  padding: 30px 25px;
+  color: black;
+  margin-bottom: 50px; }
+
+.testimony__person {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap; }
+
+.testimony__img {
+  width: 100px;
+  min-width: 100px;
+  height: 100px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  margin-right: 30px; }
+
+.testimony__name {
+  font-size: 1.5rem;
+  margin-bottom: 10px; }
+
+.testimony__review {
+  font-weight: 300; }
+
+/*About Secures*/
+.secures__container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  margin-bottom: 80px; }
+
+.secures__banner {
+  width: 100%;
+  height: 320px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px; }
+
+.secures__img {
+  width: 80%; }
+
+.secures__paragraph {
+  font-weight: 300;
+  text-align: center; }
+
+.secures__subtitle {
+  display: flex;
+  justify-content: center; }
+
+/*Buscador de vuelos*/
+.fly__container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 30px; }
+
+.fly__search {
+  width: 60%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px; }
+
+.fly__img {
+  width: 100%;
+  height: 330px; }
+
+.fly__subtitle {
+  text-align: center;
+  font-weight: 400; }
+
+/*Job Seeker*/
+.job {
+  background: #f3f2f2b6; }
+
+.job__container {
+  min-height: 400px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 80px;
+  justify-items: center;
+  align-items: center; }
+
+.job__img {
+  text-align: center; }
+
+.job__img--left {
+  text-align: left; }
+
+.job__picture {
+  max-width: 80%; }
+
+.job__items {
+  margin-bottom: 20px; }
+
+.job__list {
+  margin-bottom: 20px;
+  text-decoration: none; }
+
+.job__paragraph {
+  margin-bottom: 20px;
+  line-height: 1.5;
+  font-weight: 300; }
+
+/*Footer*/
+.footer {
+  background: #50316d; }
+
+.footer__grid {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 20px;
+  align-items: center; }
+
+.footer__title {
+  font-weight: 700;
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-align: center; }
+
+.footer__icons {
+  display: flex;
+  justify-content: space-evenly;
+  color: #fff;
+  text-decoration: none;
+  font-size: 30px; }
+
+/*SECCIÓN AUSTRALIA*/
+.principalAustralia {
+  height: 100vh;
+  background-image: url(../images/australia-opera-sydney.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  position: relative; }
+
+.containerAustralia {
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px 0;
+  max-width: 1200px; }
+
+/*ABOUT AUSTRALIA*/
+.about__main {
+  margin-top: 80px;
+  padding: 30px;
+  text-align: center; }
+
+.aboutAustralia {
+  min-height: 400px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  row-gap: 80px;
+  justify-items: center;
+  align-items: center; }
+
+.about__iframe {
+  width: 90%;
+  height: 400px; }
+
+.iframe {
+  width: 100%;
+  height: 400px; }
+
+.subtitleAustralia {
+  color: black;
+  font-size: 2.5rem;
+  margin-bottom: 35px;
+  text-align: center; }
+
+/*DESTINATIONS AUSTRALIA*/
+.destinationsAustralia {
+  background: #fff; }
+
+.destinations__grid__australia {
+  display: grid;
+  grid-template-areas: "img1 img2 img3" "img4 img5 img6";
+  gap: 10px; }
+
+.destinations__item__australia {
+  position: relative;
+  width: 100%;
+  height: 100%; }
+
+.destination__title__australia {
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: center; }
+
+.destinations__subtitle__australia {
+  font-weight: 700;
+  font-size: 3rem;
+  color: #f2f2f2;
+  text-decoration: none; }
+
+.destinations__img__australia {
+  width: 100%;
+  height: 100%;
+  border-radius: 15%;
+  box-shadow: 0 5px 7px rgba(66, 66, 66, 0.5); }
+
+.destinations__hover__australia {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+/*INFORMATION*/
+.informationAustralia__container {
+  padding: 20px; }
+
+.informationAustralia__paragraph {
+  padding: 30px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+  font-weight: 300; }
+
+.informationAustralia__list {
+  padding-left: 30px;
+  padding-bottom: 15px; }
+
+.informationAustralia__item {
+  margin-bottom: 15px; }
+
+/*APPLICATION*/
+.applicationAustralia {
+  padding-bottom: 5px; }
+
+.application__paragraph {
+  padding-top: 10px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+  font-weight: 300; }
+
+.application__subtitle {
+  padding: 15px; }
+
+.application_list {
+  padding-left: 30px;
+  padding-bottom: 15px; }
+
+.application__item {
+  margin-bottom: 25px; }
+
+/*NUEVA ZELANDA*/
+.principalNZ {
+  height: 100vh;
+  background-image: url(../images/nueva-zelanda-main-img.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  position: relative; }
+
+.containerNZ {
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 10px 0;
+  max-width: 1200px; }
+
+.aboutNZ {
+  min-height: 400px;
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  row-gap: 80px;
+  justify-items: center;
+  align-items: center; }
+
+.destinations__grid__NZ {
+  display: grid;
+  height: 100%;
+  grid-template-areas: "img1 img2 img3 img4";
+  gap: 10px; }
+
+.destinations__img__NZ {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px; }
+
+/*SECCIÓN FRANCIA*/
+.principalFrancia {
+  height: 100vh;
+  background-image: url(../images/france-main-img.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  position: relative; }
+
+.containerFrancia {
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px 0;
+  max-width: 1200px; }
+
+.aboutFrancia {
+  min-height: 400px;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 80px;
+  justify-items: center;
+  align-items: center;
+  padding-bottom: 0px; }
+
+.aboutSection {
+  min-height: 400px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 80px;
+  justify-items: center;
+  align-items: center; }
+
+.about__picture__france {
+  width: 100%;
+  border-radius: 100%;
+  padding: 5px; }
+
+.destinationsFrancia {
+  background: #f3aa0b41;
+  padding-bottom: 120px; }
+
+.destinations__grid__francia {
+  display: grid;
+  height: 200px;
+  grid-template-areas: "img1 img2 img3";
+  gap: 10px; }
+
+.destination__title__francia {
+  font-weight: 700;
+  font-size: 3rem;
+  text-align: center; }
+
+.destinations__subtitle__francia {
+  font-weight: 700;
+  font-size: 3rem;
+  color: #f2f2f2;
+  text-decoration: none; }
+
+.destinations__item__francia {
+  position: relative;
+  width: 100%;
+  height: 100%; }
+
+.destinations__img__francia {
+  width: 100%;
+  height: 100%;
+  border-radius: 15%;
+  box-shadow: 0 5px 7px rgba(66, 66, 66, 0.5); }
+
+.destinations__link {
+  text-decoration: none;
+  color: #f2f2f2; }
+
+.destinations__hover__francia {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+/*INFORMATION*/
+.informationFrancia__container {
+  padding: 5px; }
+
+.informationFrancia__paragraph {
+  padding: 10px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+  font-weight: 300; }
+
+.informationFrancia__list {
+  padding-left: 30px;
+  padding-bottom: 15px; }
+
+.informationFrancia__item {
+  margin-bottom: 15px; }
+
+/*APPLICATION*/
+.applicationFrancia {
+  padding-bottom: 5px; }
+
+.developer {
+  color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+
+.principalContact {
+  height: 100vh;
+  background-image: url(../images/contact.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  position: relative; }
+
+.containerContact {
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 10px 0;
+  max-width: 1200px; }
+
+.body {
+  display: flex;
+  width: 100%;
+  flex-direction: column; }
+
+.form {
+  background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+  width: 90%;
+  max-width: 400px;
+  border-radius: 1rem;
+  padding: 3.5rem 1.5rem;
+  margin: auto;
+  margin-bottom: 100px; }
+
+.form__container {
+  width: 100%;
+  display: grid;
+  gap: 1rem;
+  grid-auto-columns: 100%; }
+
+.form__title {
+  text-align: center;
+  font-size: 1.9rem;
+  margin-bottom: .4rem; }
+
+.form__input {
+  padding: .8rem 1rem;
+  outline: none;
+  border: none;
+  border: 1px solid #bbb0b0;
+  border-radius: 0.2rem; }
+
+.form__input--message {
+  resize: none;
+  padding: 1.8rem 1rem; }
+
+.form__cta {
+  background-color: #803eccea;
+  color: #fff;
+  border: none;
+  padding: .7rem 0;
+  border-radius: .2rem;
+  cursor: pointer; }
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 768px) {
+  .nav {
+    justify-content: space-evenly; }
+  .secures__img {
+    height: 270px; }
+  .secures__banner {
+    margin-bottom: 0;
+    height: 250px; }
+  .destinations__subtitle {
+    font-weight: 700;
+    font-size: 2rem; }
+  .fly__img {
+    height: 250px; }
+  .iframe {
+    height: 250px; }
+  .fly__search {
+    height: 300px; } }
+
+@media screen and (max-width: 640px) {
+  .nav {
+    justify-content: space-evenly; }
+  .nav__items--footer {
+    display: flex;
+    flex-wrap: wrap; }
+  .secures__img {
+    height: 200px; }
+  .secures__banner {
+    margin-bottom: 0;
+    height: 230px; }
+  .destinations__subtitle {
+    font-weight: 700;
+    font-size: 2rem; }
+  .fly__img {
+    height: 200px; }
+  .iframe {
+    height: 200px;
+    align-self: center; }
+  .destinations__grid__NZ {
+    display: flex;
+    flex-wrap: wrap; }
+  .aboutNZ {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0; }
+  .fly__search {
+    height: 200px; }
+  .testimony__flex {
+    flex-wrap: wrap; }
+  .destinations__grid {
+    display: flex;
+    flex-wrap: wrap; }
+  .destinations__subtitle {
+    font-size: 3.5rem; }
+  .destinations__grid__francia {
+    display: flex;
+    flex-wrap: wrap; }
+  .containerFrancia {
+    height: 850px; }
+  .destination__title__australia {
+    font-size: 1.2rem; }
+  .aboutSection {
+    min-height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 80px;
+    justify-items: center;
+    align-items: center; }
+  .about__iframe {
+    height: 200px;
+    width: 100%;
+    justify-content: center;
+    align-items: center; }
+  .aboutAustralia {
+    display: flex;
+    flex-wrap: wrap; }
+  .aboutIndex {
+    min-height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    justify-items: center;
+    align-items: center; }
+  .about__img--left {
+    display: none; }
+  .job__container {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px; }
+  #job__picture__2 {
+    display: none; } }
+
+@media screen and (max-width: 640px) and (max-width: 400px) {
+  .principal__title {
+    font-size: 2.5rem;
+    margin-top: 30px; }
+  .nav__items {
+    padding: 10px; }
+  .secures__img {
+    height: 100px; }
+  .secures__banner {
+    height: 100px; }
+  .fly__img {
+    height: 120px; }
+  .fly__search {
+    height: 70px; }
+  .containerFrancia {
+    height: 650px; }
+  .destinationsFrancia {
+    padding-bottom: 320px; }
+  .principal__texts {
+    margin-top: 50px; } }
